@@ -1,0 +1,15 @@
+server:
+  port: 8003
+
+person:
+  lastName: jack
+  age: 18
+  boss: false
+  birth: 2021/5/8
+  maps: {k1: v1,k2: v2}
+  lists:
+    - lisi
+    - zhaoliu
+  dog:
+    name: 阿猫
+    age: 5

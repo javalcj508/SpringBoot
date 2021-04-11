@@ -1,0 +1,60 @@
+server:
+  port: 8000
+  context-path: /ddd #配置项目的访问路径,访问资源需要路径带上
+
+
+#激活指定配置文件
+spring:
+  profiles:
+    active: dev
+#  config:
+#    location: F:/workspace/dimensionality #jar包启动时指定配置文件的位置
+
+
+#1，在同一个配置文件中配置多环境
+#2，定义不同的application-xxx.yml文件
+#3，在启动时使用命令指定配置文件：java -jar xxx.jar --spring.properties.active=xxx
+#4，虚拟机参数命令：-Dspring.profiles.active=xxx
+
+
+person:
+  lastName: jack
+  age: 18
+  boss: false
+  birth: 2021/5/8
+  maps: {k1: v1,k2: v2}
+  lists:
+    - lisi
+    - zhaoliu
+  dog:
+    name: 阿猫
+    age: 5
+
+#指定日志级别
+logging:
+  level:
+    com:
+      dimensionality:
+        trace
+#  file: spring-boot.log #不指定路径在当前项目下生成spring-boot.log日志，可以指定完整的路径F:/spring-boot.log
+  path: /spring/log #在当前磁盘的根路径下创建spring-log文件夹和里面的log文件夹：使用spring.log作为默认文件
+#  pattern:
+#    console: #在控制台输出的日志格式
+#    file: #指定文件中日志输出的格式
+
+---
+spring:
+  profiles: dev1 #指定属于哪个环境
+server:
+  port: 8011
+---
+spring:
+  profiles: qa1
+server:
+  port: 8012
+---
+spring:
+  profiles: prod1
+server:
+  port: 8013
+

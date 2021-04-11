@@ -1,0 +1,47 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person",
+      "type": "com.dimensionality.boot.config.Person"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.birth",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.boss",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.dog",
+      "type": "com.dimensionality.boot.config.Dog"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.last-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>"
+    },
+    {
+      "sourceType": "com.dimensionality.boot.config.Person",
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>"
+    }
+  ]
+}
